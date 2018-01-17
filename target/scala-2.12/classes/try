@@ -1,0 +1,139 @@
+object Main extends App{
+    val combiningLiteral: ( String, Int, String ) => String =
+      ( item: string, number: Int, unit: String ) => {
+      item + " は " + number + unit + " です。 "
+    }
+
+    println( combiningLiteral( "年齢", 6, "才" ) )
+} var handsArray = Array[Int](6) = null
+
+     handsArray(0) = 53
+     var i = 0
+
+     for (i <- 1 to 5) {
+       do {
+         handsArray(i) = yourhand()
+         if (handsArray(i - 1) == handsArray(i)) {
+           handsArray(i = yourhand())
+         }
+       } while (handsArray(i - 1) != handsArray(i))
+     }
+
+失敗？＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+ def ExcludeDuplication(c1:Int)(c2:Int)(c3:Int)(c4:Int)(c5:Int):Unit ={c5 match{
+     case c4 => var c4 = yourhand()
+     case c3 => var c3 = yourhand()
+     case c2 => var c2 = yourhand()
+     case c1 => var c1 = yourhand()
+     case _ => c4 match{
+       case c3 => var c3 = yourhand()
+       case c2 => var c2 = yourhand()
+       case c1 => var c1 = yourhand()
+       case _ => c3 match{
+         case c2 => var c2 = yourhand()
+         case c1 => var c1 = yourhand()
+         case _ => c2 match{
+           case c1 => var c1 = yourhand()
+         }
+       }
+     }
+   }
+    distribute(c1)
+    distribute(c2)
+    distribute(c3)
+    distribute(c4)
+    distribute(c5)
+  }
+
+  val ExD1 = ExcludeDuplication(yourhand())_
+  val ExD2 = ExD1(yourhand())_
+  val ExD3 = ExD2(yourhand())_
+  val ExD4 = ExD3(yourhand())_
+  ExD4(yourhand())
+}
+-----------------------------------------------------------------------------------------------------------------
+def distribute (number:Int): Unit = {number match {
+    case 0 => println("♠1")
+    case 1 => println("♠2")
+    case 2 => println("♠4")
+    case 3 => println("♠5")
+    case 4 => println("♠6")
+    case 5 => println("♠7")
+    case 6 => println("♠8")
+    case 7 => println("♠9")
+    case 8 => println("♠10")
+    case 9 => println("♠11")
+    case 10 => println("♠12")
+    case 11 => println("♠13")
+    case 12 => println("☘1")
+    case 13 => println("☘2")
+    case 14 => println("☘3")
+    case 15 => println("☘4")
+    case 16 => println("☘5")
+    case 17 => println("☘6")
+    case 19 => println("☘7")
+    case 20 => println("☘8")
+    case 21 => println("☘9")
+    case 22 => println("☘10")
+    case 23 => println("☘11")
+    case 24 => println("☘12")
+    case 25 => println("☘13")
+    case 26 => println("♡1")
+    case 27 => println("♡2")
+    case 28 => println("♡3")
+    case 29 => println("♡4")
+    case 30 => println("♡5")
+    case 31 => println("♡6")
+    case 32 => println("♡7")
+    case 33 => println("♡8")
+    case 34 => println("♡9")
+    case 35 => println("♡10")
+    case 36 => println("♡11")
+    case 37 => println("♡12")
+    case 38 => println("♡13")
+    case 39 => println("♢1")
+    case 40 => println("♢2")
+    case 41 => println("♢3")
+    case 42 => println("♢4")
+    case 43 => println("♢5")
+    case 44 => println("♢6")
+    case 45 => println("♢7")
+    case 46 => println("♢8")
+    case 47 => println("♢9")
+    case 48 => println("♢10")
+    case 49 => println("♢11")
+    case 50 => println("♢12")
+    case 51 => println("♢13")
+    case 52 => println("JOKER")
+   }
+  }:Unit
+-----------------------------------------------------------------------------------------------------------
+
+forcedTermination.breakable(
+    do {
+      print("prayer: prayer1  prayer2\ncards:  ")
+      distribute(p1handsa)
+      distribute(p1handsb)
+      print("    ")
+      distribute(p2handsa)
+      distribute(p2handsb)
+      println("")
+      print("total:  " + sumcalc(score(p1handsa), score(p1handsb)))
+      print("       " + sumcalc(score(p2handsa), score(p2handsb)))
+      println("")
+      var MJ = MasterJudge(sumcalc(score(p1handsa), score(p1handsb)))_
+      MJ(sumcalc(score(p2handsa), score(p2handsb)))
+      println("Stand  or  Hit")
+      print("prayer1:")
+      NT1 = SorH()
+      print("prayer2:")
+      NT2 = SorH()
+      if(NT1 == 0) {
+        Hit()
+      }
+      if(NT2 == 0) {
+        Hit()
+      }
+    } while(NT1 != 1 | NT2 !=1)
+
+  )--------------------------------------------------------------------------------------------------------
